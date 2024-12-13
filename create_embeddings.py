@@ -53,7 +53,9 @@ print(df.describe().round(2))
 print("Removing text chunks with small size...")
 print("\n\n")
 
+
 sleep(2)
+
 
 pages_and_chunks_over_min_token_len = df[df["chunk_token_count"] > min_token_length].to_dict(orient="records")
 
@@ -77,6 +79,7 @@ text_chunks_and_embedding_df_load = pd.read_csv(embeddings_df_save_path)
 print(text_chunks_and_embedding_df_load.head())
 
 sleep(2)
+
 
 print("\n\n")
 print("Successfully saved text chunks and embeddings to CSV")
