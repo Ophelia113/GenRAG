@@ -41,7 +41,9 @@ sleep(2)
 print("\n\n")
 print("Retrieving the most relevant resources...")
 print("\n\n")
+
 sleep(2)
+
 
 print_top_results_and_scores(query=query, embeddings=embeddings, pages_and_chunks=pages_and_chunks)
 
@@ -49,6 +51,8 @@ print_top_results_and_scores(query=query, embeddings=embeddings, pages_and_chunk
 print("Using Gemini to generate a response...")
 print("\n\n")
 sleep(2)
+
+
 
 
 ans = ask(query=query, embeddings=embeddings, pages_and_chunks=pages_and_chunks,embeddings_df_save_path=embeddings_df_save_path)
